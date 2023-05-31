@@ -1,10 +1,9 @@
 config:
   namespace: cert-manager
 
-# Default value for all environments
-acmeEmail: example@msn.com
 
 cert-manager:
+  acmeEmail: info@argouniverse.com
   installCRDs: true
   webhook:
     securePort: 10260
