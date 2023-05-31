@@ -2,14 +2,6 @@ config:
   namespace: argocd
 
 argo-cd:
-  configs:
-    timeout:
-      reconciliation: 10s
-    styles: |
-      .sidebar {
-        background: linear-gradient(to bottom, #149431,#30303d,#30303d);
-      }
-
   server:
     ingress:
       enabled: true
