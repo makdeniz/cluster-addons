@@ -5,6 +5,6 @@ argo-cd:
   configs:
     timeout.reconciliation: 10s
     styles: |
-      .nav-bar {
-        background: linear-gradient(to bottom, #149431,#0ae13e);
-      }  
+      .sidebar {
+        background: linear-gradient(to bottom,#cf0000,#000);
+      }
