@@ -3,7 +3,6 @@ config:
 
 argo-cd:
   configs:
-    timeout.reconciliation: 10s
     styles: |
       .sidebar {
         background: linear-gradient(to bottom,#cf0000,#000);
