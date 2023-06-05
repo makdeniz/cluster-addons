@@ -3,7 +3,7 @@ config:
 
 
 cert-manager:
-  acmeEmail: info@argouniverse.com
+  acmeEmail: makdeniz@msn.com
   installCRDs: true
   webhook:
     securePort: 10260
