@@ -1,7 +1,0 @@
-config:
-  namespace: internal
-
-prometheus:
-  server:
-    persistentVolume:
-      storageClass: "gp2"  
