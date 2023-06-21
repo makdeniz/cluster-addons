@@ -437,8 +437,8 @@ vault:
       #         number: use-annotation
       tls:
        - secretName: chart-example-tls
-      #    hosts:
-      #      - chart-example.local
+         hosts:
+           - vault.argo-universe.com
 
     # OpenShift only - create a route to expose the service
     # By default the created route will be of type passthrough
@@ -451,7 +451,7 @@ vault:
 
       labels: {}
       annotations: {}
-      host: chart-example.local
+      host: vault.argo-universe.com
       # tls will be passed directly to the route's TLS config, which
       # can be used to configure other termination methods that terminate
       # TLS at the router
