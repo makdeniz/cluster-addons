@@ -432,7 +432,7 @@ vault:
                 service:
                   name: ssl-redirect
                   port:
-                    number: 8201
+                    number: 8200
       ## Extra paths to prepend to the host configuration. This is useful when working with annotation based services.
       extraPaths: []
       # - path: /*
