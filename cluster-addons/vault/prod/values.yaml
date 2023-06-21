@@ -426,7 +426,13 @@ vault:
       activeService: true
       hosts:
         - host: vault.argouniverse.com
-          paths: /
+          paths:
+            - path: /*
+              backend:
+                service:
+                  name: ssl-redirect
+                  port:
+                    number: 8201
       ## Extra paths to prepend to the host configuration. This is useful when working with annotation based services.
       extraPaths: []
       # - path: /*
@@ -436,7 +442,7 @@ vault:
       #       port:
       #         number: use-annotation
       tls:
-       - secretName: issuer-letsencrypt-vault
+       - secretName: issuer-letsencrypt
          hosts:
            - vault.argouniverse.com
 
