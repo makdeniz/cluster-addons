@@ -425,7 +425,7 @@ vault:
       # configure the ingress to point to the Vault active service.
       activeService: true
       hosts:
-        - host: vault.argo-universe.com
+        - host: vault.argouniverse.com
           paths: []
       ## Extra paths to prepend to the host configuration. This is useful when working with annotation based services.
       extraPaths: []
@@ -438,7 +438,7 @@ vault:
       tls:
        - secretName: chart-example-tls
          hosts:
-           - vault.argo-universe.com
+           - vault.argouniverse.com
 
     # OpenShift only - create a route to expose the service
     # By default the created route will be of type passthrough
@@ -451,7 +451,7 @@ vault:
 
       labels: {}
       annotations: {}
-      host: vault.argo-universe.com
+      host: vault.argouniverse.com
       # tls will be passed directly to the route's TLS config, which
       # can be used to configure other termination methods that terminate
       # TLS at the router
