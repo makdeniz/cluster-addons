@@ -426,13 +426,7 @@ vault:
       activeService: true
       hosts:
         - host: vault.argouniverse.com
-          paths:
-            - path: /
-              backend:
-                service:
-                  name: vault
-                  port:
-                    number: 8200
+          paths: []
       ## Extra paths to prepend to the host configuration. This is useful when working with annotation based services.
       extraPaths: []
       # - path: /*
@@ -442,7 +436,7 @@ vault:
       #       port:
       #         number: use-annotation
       tls:
-       - secretName: issuer-letsencrypt
+       - secretName: issuer-letsencrypt-vault
          hosts:
            - vault.argouniverse.com
 
