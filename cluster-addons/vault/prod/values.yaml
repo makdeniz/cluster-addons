@@ -436,7 +436,7 @@ vault:
       #       port:
       #         number: use-annotation
       tls:
-       - secretName: chart-example-tls
+       - secretName: issuer-letsencrypt
          hosts:
            - vault.argouniverse.com
 
